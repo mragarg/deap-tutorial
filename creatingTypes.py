@@ -1,10 +1,10 @@
-import random
-
-from deap import base
-from deap import creator
-from deap import tools
-
 # List of Floats
+# import random
+
+# from deap import base
+# from deap import creator
+# from deap import tools
+
 # creator.create("FitnessMax", base.Fitness, weights=(1.0,))
 # creator.create("Individual", list, fitness=creator.FitnessMax)
 
@@ -15,6 +15,12 @@ from deap import tools
 # toolbox.register("individual", tools.initRepeat, creator.Individual, toolbox.attr_float, n=IND_SIZE)
 
 # Permutation
+import random
+
+from deap import base
+from deap import creator
+from deap import tools
+
 creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 creator.create("Individual", list, fitness=creator.FitnessMin)
 
