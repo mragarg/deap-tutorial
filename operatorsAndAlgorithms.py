@@ -18,3 +18,12 @@ ind1 = toolbox.individual()
 
 print(ind1)
 print(ind1.fitness.valid)
+
+def evaluate(individual):
+    a = sum(individual)
+    b = len(individual)
+    return a, 1. / b
+
+ind1.fitness.values = evaluate(ind1)
+print(ind1.fitness.valid)
+print(ind1.fitness)
